@@ -4,6 +4,10 @@ const { signup, login,updateuser,geteuser } = require('../controllers/authContro
 const router = express.Router();
 
 // User Signup
+router.get('/', ()=>
+{
+    console.log("Hello");
+});
 router.post('/signup', signup);
 
 // User Login
